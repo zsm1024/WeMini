@@ -1,0 +1,6 @@
+<!--logs.wxml-->
+<view class="container">
+  <view>
+    <web-view style='margin-top:200px' src="http://wechatuat.gwmfc.com/gwm-web-wechat/autograph2.html" />
+  </view>
+</view>

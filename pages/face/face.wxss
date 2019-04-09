@@ -1,0 +1,15 @@
+
+.faceitem{
+  width: 100%;
+  margin-bottom: 20rpx;
+  padding: 0 23rpx;
+  box-sizing: border-box;
+}
+.faceitem image{
+  width: 100%
+}
+.foterbox{
+  padding: 0 20rpx;
+  width: 100%;
+  box-sizing: border-box;
+}

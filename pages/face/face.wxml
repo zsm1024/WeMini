@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='faceitem'>
+    <image src="../../images/Sketch1.png" mode="widthFix"></image>
+  </view>
+  <view class='faceitem'>
+    <image src="../../images/Sketch2.png" mode="widthFix"></image>
+  </view>
+  <view class='faceitem'>
+    <image src="../../images/Sketch3.png" mode="widthFix"></image>
+  </view>
+  <view class='foterbox'>
+    <view class="foterbutton">
+      <wux-button block type="positive" bindtap='start'>开始识别</wux-button>
+    </view>
+  </view>
+</view>

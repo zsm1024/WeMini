@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/agreement/agreement",
+    "pages/agreements/agreements",
+    "pages/verificationCode/verificationCode",   
+    "pages/autograph/autograph",
+    "pages/face/face",
+    "pages/viewState/viewState",
+    "pages/success/success"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "预授信",
+    "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {    
+    "wux-steps": "dist/steps/index",
+    "wux-step": "dist/step/index",
+    "wux-cell-group": "dist/cell-group/index",   
+    "wux-cell": "dist/cell/index",
+    "wux-input": "dist/input/index",
+    "wux-calendar": "dist/calendar/index",
+    "wux-button": "dist/button/index",
+    "wux-dialog": "dist/dialog/index",
+    "wux-loading": "../../dist/loading/index"
+  }
+
+}

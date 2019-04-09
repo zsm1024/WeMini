@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <wux-loading id="wux-loading" />
+  <view class="page">
+    <wux-steps class="stepBar" current="{{ current }}">
+      <wux-step title="身份认证" wux-class="stepitem"></wux-step>
+      <wux-step title="确认协议" wux-class="stepitem"></wux-step>
+      <wux-step title="电子授权" wux-class="stepitem"></wux-step>
+      <wux-step title="预审完成" wux-class="stepitem"></wux-step>
+    </wux-steps>
+  </view>
+  <view class='jingshibox'>
+    <image src='../../images/jingshi.png'  mode="widthFix" class="jingshiicon"></image>
+    <text>曝光过度的照片影响智能识别,拍摄时请避开强光</text>
+  </view>
+  <view class='upimg'>
+    <view class="upimgItem" bindtap="changeAvatar">
+      <view class="language">
+        <view style='text-align:center'>身份证人像面</view>
+        <image class="userinfo-avatar" src="{{avatar}}" background-size="cover" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="upimgItem" bindtap="changeAvatar">
+      <view class="language">
+        <view style='text-align:center'>身份证国徽面</view>
+        <image class="userinfo-avatar" src="{{avatar}}" background-size="cover" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+  <!--表单-->
+  <wux-calendar id="wux-calendar" />
+  <view class='form'>
+      <wux-cell hover-class="none">
+        <wux-input label="姓名" value='{{name}}' placeholder="请输入您的姓名" />
+      </wux-cell>
+      <wux-cell hover-class="none">
+        <wux-input label="身份证号" placeholder="请输入您的身份证号 " />
+      </wux-cell>
+      <wux-cell hover-class="none" data-name="validitytime" bindtap="openCalendar">
+        <wux-input wux-class='timepick' label="身份证到期日" controlled value="{{validitytime}}" disabled placeholder="请选择您的身份证到期日" />
+      </wux-cell>
+      <view class="foterbutton">
+        <button class='mainTonal' block type="positive" bindtap='nexthref'>下一步</button>
+      </view>
+  </view>
+</view>

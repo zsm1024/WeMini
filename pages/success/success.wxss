@@ -1,0 +1,35 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+.page{
+  padding-bottom:24rpx;
+
+}
+.container{
+  background-color: #EEEEF2;
+  height: 100%;
+  display: block;
+  padding: 0
+}
+.content{
+  text-align: center;
+  margin-top: 72rpx;
+  padding: 0 10rpx;
+}
+.boldtile{
+  color: #333;
+  font-size: 56rpx;
+  font-weight: bold; 
+  text-align: center;
+}
+.content image{
+  width: 319rpx;
+  margin-top: 42rpx;
+}
+.text{
+  display: block;
+  padding: 0 10rpx;
+  font-size: 28rpx;
+  color: #999;
+}

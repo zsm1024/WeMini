@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+  <wux-loading id="wux-loading" />
+  <view class='title'>
+    <view class='linelable'></view>
+    <text>身份证</text>
+  </view>
+  <view class='upimg'>
+    <view class="upimgItem" bindtap="changeAvatar">
+      <view class="language">
+        <view style='text-align:center'>身份证人像面</view>
+        <image class="userinfo-avatar" src="{{avatar}}" background-size="cover" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="upimgItem" bindtap="changeAvatar">
+      <view class="language">
+        <view style='text-align:center'>身份证国徽面</view>
+        <image class="userinfo-avatar" src="{{avatar}}" background-size="cover" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+  <!--表单-->
+  <wux-calendar id="wux-calendar" />
+  <view class='form'>
+      <wux-cell hover-class="none">
+        <wux-input label="姓名" placeholder="刘德华" />
+      </wux-cell>
+      <wux-cell hover-class="none">
+        <wux-input label="身份证号" placeholder="1363464646464646558855 " />
+      </wux-cell>
+      <wux-cell hover-class="none" data-name="borsdatime" bindtap="openCalendar">
+        <wux-input wux-class='timepick' label="出身年月" controlled value="{{borsdatime}}" disabled placeholder="请选择您的出生年月 " />
+      </wux-cell>
+      <wux-cell hover-class="none">
+        <wux-input label="性别" placeholder="请输入您的性别" />
+      </wux-cell>
+      <wux-cell hover-class="none">
+        <wux-input label="民族" placeholder="请输入您的民族 " />
+      </wux-cell>
+      <wux-cell hover-class="none" data-name="validitytime" bindtap="openCalendar">
+        <wux-input wux-class='timepick' label="身份证到期日" controlled value="{{validitytime}}" disabled placeholder="请选择您的身份证到期日" />
+      </wux-cell>
+  </view>
+  <view class='title'>
+    <view class='linelable'></view>
+    <text>征信查询授权书</text>
+  </view>
+  <view style='width:100%;text-align:center'>
+    <image class="images" src="{{avatar}}" background-size="cover" mode="widthFix"></image>
+  </view>
+</view>

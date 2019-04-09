@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page">
+    <wux-steps class="stepBar" current="{{ current }}">
+      <wux-step title="身份认证" wux-class="ss stepitem"></wux-step>
+      <wux-step title="确认协议" wux-class="stepitem"></wux-step>
+      <wux-step title="电子授权" wux-class="stepitem"></wux-step>
+      <wux-step title="预审完成" wux-class="stepitem"></wux-step>
+    </wux-steps>
+  </view>
+  <!--表单-->
+  <wux-calendar id="wux-calendar" />
+  <view class='form'>
+      <wux-cell hover-class="none">
+        <wux-input label="手机号" placeholder="请输入您的手机号 " value="{{ phone }}" controlled type="number" bind:change="onChangeinput"/>
+      </wux-cell>
+          <view class='codebox'>
+            <view class='codeconter'>
+                <view class="cell__hd">
+                    <view class="label">验证码</view>
+                </view>
+                <view class='vcoderight'>
+                  <view class="cell__bd">
+                      <input class="weui-input" value='{{codenum}}' bindinput="onChangecode" placeholder="请输入验证码" />
+                  </view>
+                  <view class="cell__ft">
+                      <view class="vcode-btn" bindtap="vcode">{{ code || '获取验证码' }}</view>
+                  </view>
+                </view>
+            </view>            
+            <view class='codeerror'>
+              <text bindtap='codemsg' data-type="1">收不到验证码？</text>
+            </view>
+       </view>
+       <view class="foterbutton">
+        <button class="mainTonal {{adopt?'adopt':''}}" block type="positive" bindtap='nexthref'>下一步</button>
+      </view>
+  </view>
+  <view class="codemsgbox" style="top:{{codemsgtogle?topnum:'0'}}" bindtap="codemsg" data-type="2">
+    <view class="codemsg">
+      <view>1、 请确认该预留手机号是否为当前使用手机号</view>
+      <view>2、请查看短信是否被安全软件拦截</view>
+      <view>3、检查手机是否处于信号不好的环境</view>
+      <view>4、若是双卡双待手机，请检查副卡情况</view>
+      <view>5、检查手机短信箱是否已满</view>
+      <view>6、由于运营商网络原因，可能存在短信延迟， 请耐心等待1分钟或稍后再试。</view>
+      <image src="../../images/textclose.png" class="textclose" mode='widthFix'></image>
+    </view>
+  </view>
+</view>

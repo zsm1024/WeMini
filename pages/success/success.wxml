@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page">
+    <wux-steps class="stepBar" current="{{ current }}">
+      <wux-step title="身份认证" wux-class="ss stepitem"></wux-step>
+      <wux-step title="确认协议" wux-class="ss stepitem"></wux-step>
+      <wux-step title="电子授权" wux-class="ss stepitem"></wux-step>
+      <wux-step title="预审完成" wux-class="ss stepitem"></wux-step>
+    </wux-steps>
+  </view>
+  <view class='content'>
+    <view class='boldtile'>申请已提交成功!</view>
+    <image src='../../images/sucsse.png' mode="widthFix"></image>
+    <text class='text'>您已成功提交客户授信申请，审批结果将以短信形式反馈，请注意查收</text>
+    <view class="foterbutton">
+      <button class='mainTonal' block type="positive" bindtap='nexthref'>查看预审状态</button>
+    </view>
+  </view>
+  
+</view>

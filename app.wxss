@@ -1,0 +1,62 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding:10rpx 0;  
+  font-size: 14px;
+  box-sizing: border-box;
+  color: #444
+} 
+.page{
+  width: 100%;
+  background-color: #fff
+} 
+  /*ss 为实心对勾*/
+.ss wux-icon view
+{
+  color:#fff;
+  background-color: #387ef5;
+  border:none;
+  border-radius:100%;
+  
+  font-size: 60rpx !important
+}
+.stepitem view.wux-step__title{
+  font-size: 28rpx;
+  font-weight: 100;
+  color: #444
+}
+.stepitem view.wux-step__icon{
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: #444
+}
+
+.foterbutton{
+  margin-top: 60rpx;
+  width: 100%;
+  padding: 0 49rpx;
+  box-sizing: border-box;
+}
+.wux-step--process .wux-step__icon{
+  background-color: #fff !important;
+  color: #387ef5 !important;
+}
+.foterbutton .mainTonal{
+  background-color: #FF8F00;
+  border-radius:59rpx;
+  border: none;
+  color: #fff;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size:32rpx;
+
+}
+.foterbutton .adopt {
+  background-color: rgba(255,143,0, .5)
+}
